@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bruh</title>
+
+    <script src="js/funnycalc.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Which meme animal are you? Answer these 8 questions and find out!</h1>
+<form name="MemeForm">
+    <table>
+        <tr><td><label id="catordoglabel">1. Cats or dogs?</label></td><td>
+            <input type="radio" name="catordog" value="cat">&nbsp; Meow. <br>
+            <input type="radio" name="catordog" value="dog">&nbsp; Bark. <br>
+        </td></tr>
+        <tr><td><label id="funnymeterlabel">2. How funny are you?</label></td><td>
+            <input type="radio" name="funnymeter" value="-10">&nbsp; Grubhub perks give you deals- <br>
+            <input type="radio" name="funnymeter" value="10">&nbsp; Wojack <br>
+            <input type="radio" name="funnymeter" value="20">&nbsp; Get Among some Bitches <br>
+            <input type="radio" name="funnymeter" value="30">&nbsp; dom64
+        </td></tr>
+        <tr><td><label for="sustest" id="suslabel">3. When the impostor is [...]</label></td><td>
+            <input type="text" id="sustest" placeholder="Enter what's missing." maxlength="30" required>
+        </td></tr>
+        <tr><td><label id="propertylabel">4. Which of these things best describe you?</label></td><td>
+            <input type="checkbox" name="property" value="10">&nbsp; Cute. <br>
+            <input type="checkbox" name="property" value="30">&nbsp; Evil. <br>
+            <input type="checkbox" name="property" value="25">&nbsp; Horny. <br>
+            <input type="checkbox" name="property" value="20">&nbsp; Funny. <br>
+            <input type="checkbox" name="property" value="5">&nbsp; Original <br>
+            <input type="checkbox" name="property" value="15">&nbsp; Insane.
+        </td></tr>
+        <tr><td><label for="ironylvl" id="ironylabel">5. How many layers of irony are you on?</label></td><td>
+            <input type="range" id="ironylvl" min="0" max="11"  value= "0" oninput="this.nextElementSibling.value = this.value"><output>0</output>
+        </td></tr>
+        <tr><td><label id="controllerlabel">6. dom64 is...</label></td><td>
+            <input type="checkbox" name="controltype" value="-5">&nbsp; ...controlling people.<br>
+            <input type="checkbox" name="controltype" value="10">&nbsp; ...a controller player.<br>
+            <input type="checkbox" name="controltype" value="15">&nbsp; ...a control people.<br>
+            <input type="checkbox" name="controltype" value="-20">&nbsp; ...a federal agent.
+        </td></tr>
+        <tr><td><label for="cscheck" id="cslabel">7. How many white vans are on the CS:GO map "Nuke"?</label></td><td>
+            <input type="number" name="cscheck" id="cscheck" placeholder="lol" min="0" max="12">
+        </td></tr>
+        <tr><td><label for="domoracheck" id="auroralabel">8. What is the url of the best channel of the domoracord server?</label></td><td>
+            <input type="url" name="domoracheck" id="domoracheck" placeholder="*fart noise*">
+        </td></tr>
+        <tr><td colspan="2"><label for="finishbutton" id="finishlabel"></label>
+            <input type="button" name="finishbutton" id="finishbutton" value="Instantly become funny." onclick="calculateFunny()">
+        </td></tr>
+    </table>
+</form>
+    <h3>Your meme animal is:</h3>
+    <h2 id="memename"></h2>
+    <img src="images/nothing.png" title="" alt="Whackass internet connection" id="image" name="image">
+    <p id="dogorcat"></p>
+    <p id="memedesc"></p>
+</body>
+</html>

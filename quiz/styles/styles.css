@@ -1,0 +1,30 @@
+* {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+form {
+    padding: 5px;
+}
+
+table {
+    table-layout: fixed;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+h1 {
+    align-content: center;
+    padding: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+td {
+    padding: 5px;
+}
+
+#finishbutton {
+    margin: 10px auto;
+}
