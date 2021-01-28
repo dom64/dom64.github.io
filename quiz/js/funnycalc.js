@@ -102,8 +102,6 @@
 
         // Calculates total amount of points accumulated
         value = funnyamnt + susamnt + propertyamnt + ironyamnt + controlamnt + domoraamnt;
-        window.alert("Value: " + value);
-        window.alert("Points: " + catordog);
 
         // Identifies the meme based on amount of points
         switch (Math.floor(value/22)) {
